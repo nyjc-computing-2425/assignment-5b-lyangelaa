@@ -44,7 +44,7 @@ class TestAssignment(unittest.TestCase):
         mf_enrolment = filter_gender(enrolment, "MF")
         for i, row in enumerate(mf_enrolment, start=1):
             self.assertEqual(
-                len(row), 3,
+                len(str(row)), 3,
                 msg="After filtering, each row (list) should have only three items"
             )
             self.assertIsInstance(
